@@ -15,9 +15,10 @@ Add the following to your AndroidManifest.yml
 
 Add following to your project
 
+
+```javascript
 import QrCode from 'qr-scan';
 
-```yaml
 <QrCode onScan={console.log} />
 ```
 
