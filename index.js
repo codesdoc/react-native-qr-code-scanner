@@ -1,10 +1,12 @@
 import React, { Component } from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { View } from 'react-native';
 import { WebView } from 'react-native-webview';
 
 
 class QrScan extends Component{
   render() {
+    const {onScan} = this.props;
+
     return (
       <View style={{width: '100%', height: '100%'}}>
         <WebView
@@ -13,6 +15,7 @@ class QrScan extends Component{
           onShouldStartLoadWithRequest={event => {
             if (event.url !== 'https://codesdoc.com/demo/qrcodescanner/') {
               console.log('onShouldStartLoadWithRequest', event.url);
+              onScan();
               // Write your code here.
               return false;
             }
