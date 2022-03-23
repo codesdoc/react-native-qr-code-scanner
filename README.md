@@ -1,7 +1,11 @@
 # react-native-qr-code-scanner
 
 Add the package to your project 
+
+```shell
+
 npm install git@github.com:codesdoc/react-native-qr-code-scanner.git
+```
 
 Add the following to your AndroidManifest.yml
 ```yaml
