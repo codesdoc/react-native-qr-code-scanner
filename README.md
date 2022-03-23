@@ -10,6 +10,6 @@ Add following to your project
 
 import QrCode from 'qr-scan';
 
-<QrCode />
+<QrCode onScan={console.log} />
 
 
